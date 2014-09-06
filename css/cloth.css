@@ -273,14 +273,15 @@
 /* line 230, ../sass/cloth.scss */
 .bt-grounp {
   margin: 0px;
+  padding-bottom: 6px;
 }
-/* line 232, ../sass/cloth.scss */
+/* line 233, ../sass/cloth.scss */
 .bt-grounp .btn {
   color: #fff;
   background-color: #15afb9;
   padding: 6px 6px;
 }
-/* line 236, ../sass/cloth.scss */
+/* line 237, ../sass/cloth.scss */
 .bt-grounp .btn.btn-link {
   background-color: #fff;
   color: #15afb9;
