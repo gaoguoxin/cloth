@@ -27,7 +27,7 @@ body {
 }
 .container-fluid .form-group input {
   width: 70%;
-  height: 5.6%;
+  height: 30px;
   background: #0c696e;
   border: 1px solid #0e7c82;
   padding: 0px 15px;
