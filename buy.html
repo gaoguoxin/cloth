@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>购买页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/buy.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid"><div class='h4'>生成订单</div></div>
+    </nav>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-xs-4 cloth-img">
+          <img src="images/products/cloth-p.png" alt="">
+          <button class="btn btn-sm btn-default female active">女</button>
+          <button class="btn btn-sm btn-default male ">男</button>
+        </div>
+        <div class="col-xs-8 cloth-info">
+          <div class="table-responsive">
+            <table class="table">
+              <tr class='female current'>
+                <td><label for=""><span>S</span><input  type="number" name='female_s' placeholder='0'></label></td>
+                <td><label for=""><span>M</span><input  type="number" name='female_m' placeholder='0'></label></td>
+                <td><label for=""><span>L</span><input  type="number" name='female_l' placeholder='0'></label></td>
+              </tr>
+              <tr class='female current'>
+                <td><label for=""><span>XL</span><input    type="number" name='female_xl' placeholder='0'></label></td>
+                <td><label for=""><span>XXL</span><input   type="number" name='female_xxl' placeholder='0'></label></td>
+                <td><label for=""><span>XXX</span><input   type="number" name='female_xxx' placeholder='0'></label></td>
+              </tr>
+              <tr class='male'>
+                <td><label for=""><span>S</span><input  type="number" placeholder='0' name='male_s' disabled></label></td>
+                <td><label for=""><span>M</span><input  type="number" placeholder='0' name='male_m' disabled></label></td>
+                <td><label for=""><span>L</span><input  type="number" placeholder='0' name='male_l' disabled></label></td>
+              </tr>
+              <tr class='male'>
+                <td><label for=""><span>XL</span><input    type="number" name='male_xl'  placeholder='0' disabled></label></td>
+                <td><label for=""><span>XXL</span><input   type="number" name='male_xxl' placeholder='0' disabled></label></td>
+                <td><label for=""><span>XXX</span><input   type="number" name='male_xxx' placeholder='0' disabled></label></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4">总数量：</div>
+        <div class="col-xs-8 detail_info"><span class="total-num money" >0</span>件</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">原单价：</div>
+        <div class="col-xs-8 detail_info">
+          <span class="pull-left">￥<span class="o_price money">70.00</span></span>
+          <span class="pull-right">现单价：<span class="n_price">￥<span class="now-price money">70.00</span></span></span>
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-xs-4">总价格：</div>
+        <div class="col-xs-8 detail_info">￥<span class="cost money">70.00</span></div>      
+      </div>            
+    </div>
+    <div class="order-info">
+      <form class='form-horizontal' role="form" action=''>
+        <input type="hidden" name='female_s'>
+        <input type="hidden" name='female_m'>
+        <input type="hidden" name='female_l'>
+        <input type="hidden" name='female_xl'>
+        <input type="hidden" name='female_xxl'>
+        <input type="hidden" name='female_xxx'>
+        <input type="hidden" name='male_s'>
+        <input type="hidden" name='male_m'>
+        <input type="hidden" name='male_l'>
+        <input type="hidden" name='male_xl'>
+        <input type="hidden" name='male_xxl'>
+        <input type="hidden" name='male_xxx'>        
+        <div class="form-group">
+          <label class="control-label">支付方式：</label>
+            <p class="form-control-static">xxxxxxxxxx</p>
+        </div>
+        <div class="form-group">
+          <label class="control-label">联系客服：</label>
+            <p class="form-control-static">4008-000-000</p>
+        </div>
+        <div class="form-group">
+          <label  class="control-label" for="receiver">收货人：</label>
+          <div class='col-xs-8'>
+            <input type="text" class="form-control col-xs-6" id="receiver" placeholder="请填写收货人信息">  
+          </div>
+          
+        </div>
+        <div class="form-group">
+          <label for="tel">联系电话：</label>
+          <div class='col-xs-8'>
+            <input type="tel" class="form-control" id="tel" placeholder="请填写手机号码">  
+          </div>
+        </div>
+        <div class="form-group">
+          <label  for="address">收货地址：</label>
+          <div class='col-xs-8'>
+            <input  class='form-control' type="text" id="address" placeholder="请填写收货地址">
+          </div>
+        </div>
+        <hr />
+        <div class="form-group">
+          <label></label>
+          <div class='col-xs-8'>
+            <button type="submit" class="btn btn-default">生成订单</button>
+          </div>
+        </div>
+      </form>      
+
+    </div> 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/numeric.min.js"></script>
+    <script src='js/buy.js'></script>
+  </body>
+</html>
