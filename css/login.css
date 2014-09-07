@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #14afb8;
+}
+
+.container-fluid {
+  text-align: center;
+}
+.container-fluid .logo {
+  padding: 9.4% 31.15% 4.8% 31.15%;
+}
+.container-fluid .logo img {
+  width: 100%;
+}
+.container-fluid h4 {
+  color: #fff;
+}
+.container-fluid h5 {
+  margin: 1.25% 0 4.375% 0;
+  color: #fff;
+}
+.container-fluid .form-group label {
+  color: #fff;
+}
+.container-fluid .form-group input {
+  width: 70%;
+  height: 5.6%;
+  background: #0c696e;
+  border: 1px solid #0e7c82;
+  padding: 0px 15px;
+  color: #fff;
+}
+.container-fluid .form-group input::-webkit-input-placeholder {
+  color: #fff;
+}
+.container-fluid .password {
+  margin: 4.375% 0 6.25% 0;
+}
+.container-fluid .btn {
+  width: 49%;
+  height: 6.25%;
+  background: #000;
+  color: #fff;
+  border: 2px solid #0c696e;
+}
+.container-fluid .creatUse {
+  color: #fff;
+  margin: 16.7% 0 9.5% 0;
+  display: block;
+}
